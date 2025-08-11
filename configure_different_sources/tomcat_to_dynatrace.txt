@@ -1,0 +1,31 @@
+# I am using self managed tomcat server where the application is deployed.
+
+# I want to monitor the application using Dynatrace.
+# I have installed Dynatrace OneAgent on the server.
+how to install one agent on tomcat server ?
+# To install Dynatrace OneAgent on a Tomcat server, follow these steps:
+1. **Download Dynatrace OneAgent**
+    - Log in to your Dynatrace account.
+    - Navigate to the "Deploy Dynatrace" section.
+    - Select "OneAgent" and choose the appropriate version for your operating system.
+    - Download the OneAgent installer.
+2. **Transfer the Installer to the Server**
+    - Use SCP, SFTP, or any file transfer method to copy the downloaded OneAgent installer to your Tomcat server.
+3. **Run the Installer**
+    - Connect to your Tomcat server via SSH.
+    - Navigate to the directory where you transferred the OneAgent installer.
+    - Run the installer with the following command:
+      ```bash
+      sudo ./Dynatrace-OneAgent-Linux.sh
+      ```
+    - Follow the prompts to complete the installation. The installer will automatically detect your Tomcat installation and configure monitoring.
+4. **Verify Installation**
+    - After installation, you can verify that OneAgent is running by checking the status:
+      ```bash
+      sudo systemctl status dynatrace-oneagent
+      ```
+    - You should see that the OneAgent service is active and running.
+5. **Configure OneAgent for Tomcat**
+    - OneAgent automatically detects the Tomcat application and starts monitoring it. You can access the Dynatrace web interface to view metrics, traces, and logs related to your Tomcat application.
+
+# Now I need to configure the Dynatrace OneAgent to monitor the Tomcat application.
