@@ -1,0 +1,13 @@
+installing a OneAgent in a Docker container
+//
+// To install Dynatrace OneAgent in a Docker container, follow these steps:
+// 1. **Pull the OneAgent Docker Image**
+//     - Open a terminal and run the following command to pull the Dynatrace OneAgent
+//       ```bash
+//       docker pull dynatrace/oneagent
+//       ```
+// 2. **Run the OneAgent Container**
+//     - Use the following command to run the OneAgent container, replacing `<YOUR_ENVIRONMENT_ID>`
+
+
+Command to run oneagent as service //       and

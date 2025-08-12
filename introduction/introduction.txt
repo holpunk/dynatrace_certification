@@ -17,3 +17,5 @@ application performance monitoring (APM)
 9. cloud monitoring
 10. application security monitoring
 
+configuring dynatrace for your application could involve several steps
+
